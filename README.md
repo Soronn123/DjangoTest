@@ -27,9 +27,8 @@ find user: table name
 
 no find user: Undefined
 
-no valid parameter: """
+no valid parameter:
     name : text halo,
     date : date YYYY-MM-DD | DD.MM.YYYY 2024-10-12,
     phone : phone +79999999999,
     email : email example@yandex.ru
-"""
