@@ -25,9 +25,5 @@ def loadInfo(request):
     if models.validPhone(phone) and models.valiDate(date) \
         and models.validEmail(email):
         return HttpResponse(models.searchQuery(name, date, phone, email))
-
-    print("validPhone", models.validPhone(phone))
-    print("valiDate", models.valiDate(date))
-    print("validEmail", models.validEmail(email))
-
+            
     return HttpResponse(example)
