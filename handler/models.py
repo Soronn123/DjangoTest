@@ -40,12 +40,9 @@ def valiDate(date_text: str) -> bool:
 def searchQuery(name: str, date: str, phone: str, email: str) -> str:
     user = Query()
     tables = db.tables()
-    print(name, date, phone, email)
-    print(tables)
     for each in tables:
         table = db.table(each)
         result = table.search( (user.name == name) & (user.date == date) & (user.phone == phone) & (user.email == email))
-        print(result)
         if len(result) != 0:
             return each
     
